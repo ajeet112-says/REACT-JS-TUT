@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './components/Navbar'
+import Navbar2 from './components/Navbar2'
 import {Route, Routes} from 'react-router-dom' 
 import Home from './Pages/Home'
 import About from './Pages/About'
@@ -11,6 +12,7 @@ function App() {
   return (
     <div>
        <Navbar />
+       <Navbar2 />
        <Routes>
           <Route  path='/' element={<Home/>} />
           <Route  path='/about' element={<About/>} />
@@ -18,6 +20,7 @@ function App() {
           <Route   path='/product' element={ <Product />}/>
           <Route   path='*' element={ <PageNotFound />}/>
        </Routes>
+        
     </div>
   )
 }

@@ -4,11 +4,11 @@ import { NavLink } from 'react-router-dom';
 function Navbar() {
   return (
     <div className="bg-black text-2xl h-16 text-white flex items-center px-6">
-      <div>
+      
         <h1>Coding champ</h1>
-      </div>
+      
 
-      <div className="flex items-center gap-8 ml-auto">
+      <div className="flex items-center gap-8 ml-auto ">
         <NavLink
           to="/"
           className={({ isActive }) =>
