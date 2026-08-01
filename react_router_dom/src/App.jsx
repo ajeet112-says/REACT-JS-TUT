@@ -7,6 +7,8 @@ import About from './Pages/About'
 import Contact from './Pages/Contact'
 import Product from './Pages/product'
 import PageNotFound from './Pages/PageNotFound'
+import Kids from './Pages/Kids'
+import Mens from './Pages/Mens'
 
 function App() {
   return (
@@ -17,7 +19,13 @@ function App() {
           <Route  path='/' element={<Home/>} />
           <Route  path='/about' element={<About/>} />
           <Route   path='/contact' element={ <Contact />}/>
-          <Route   path='/product' element={ <Product />}/>
+
+          <Route  path='/product' element={ <Product />}> 
+             <Route path='mens' element={ <Mens />} />
+             <Route path='kids' element={ <Kids />} />
+
+          </Route>
+
           <Route   path='*' element={ <PageNotFound />}/>
        </Routes>
         
